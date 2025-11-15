@@ -1,0 +1,22 @@
+<div class="container-centro1 container-centro" >
+    <h1 [style.font-size.px]="60" >Sistema de Cadastro Locadora</h1>
+</div>
+
+<div class="container-centro">
+    <h1>Selecione uma opção:</h1>
+    <div class="container-centro2">
+      <button class="botao botao-inicial" (click)="IrAdicionarElemento()"> Adicionar elemento</button>
+      <button class="botao botao-inicial" (click)="IrAlterarElemento()"> Alterar elemento  </button>
+      <button class="botao botao-inicial" (click)="IrDeletarElemento()"> Deletar elemento</button>
+    </div>
+    <div class="container-centro2" >
+      <button class="botao botao-inicial" (click)="IrAlugarElemento()"> Alugar elemento</button>
+      <button class="botao botao-inicial" (click)="IrDevolverElemento()"> Devolver elemento</button>
+    </div>
+    <div class="container-centro2">
+      <button class="botao botao-inicial" (click)="IrConsultarElementos()"> Consultar todos elementos</button>
+    </div>
+  <div class="container-centro1 container-centro" >
+    <app-pagina-buscar-elemento></app-pagina-buscar-elemento>
+  </div>
+</div>
