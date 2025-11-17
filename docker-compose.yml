@@ -1,0 +1,42 @@
+services:
+  mongodb:
+    image: mongo:latest
+    container_name: locadora-mongo
+    restart: always
+    ports:
+      - "27017:27017"
+    volumes:
+      - mongo-data:/data/db
+    networks:
+      - locadora-network
+
+  api-backend:
+    container_name: locadora-api
+    build:
+      context: ./MongoDBDemo/ProjetoLocadora  
+      dockerfile: Dockerfile
+    ports:
+      - "5119:8080"
+    environment:
+      - MONGO_CONNECTION_STRING=mongodb://mongodb:27017
+    depends_on:
+      - mongodb
+    networks:
+      - locadora-network
+
+  angular-frontend:
+    container_name: locadora-web
+    build:
+      context: ./AngularDemo/projeto-locadora-angular
+      dockerfile: Dockerfile
+    ports:
+      - "80:80"
+    networks:
+      - locadora-network
+
+volumes:
+  mongo-data:
+
+networks:
+  locadora-network:
+    driver: bridge
