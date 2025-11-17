@@ -1,0 +1,11 @@
+<div class="container-centro">
+  <h1>Digite para buscar um elemento armazenado:</h1>
+  <input class="botao" type="search" [(ngModel)]="termo" (keyup)="buscarElementos()" placeholder="Buscar...">
+  <div><h1>Elementos</h1></div>
+  <div class="container-centro">
+    @for(elemento of elementoImprimir; track elemento){
+      <p>Id: {{elemento.id}} - {{ elemento.tipo }}: {{elemento.nome}}, {{elemento.autor}}, {{elemento.ano}},
+        disponível: {{elemento.disponivel}}</p>
+    }
+  </div>
+</div>

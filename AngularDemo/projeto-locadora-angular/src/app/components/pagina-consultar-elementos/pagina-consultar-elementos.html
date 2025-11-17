@@ -1,0 +1,14 @@
+<div class ="container-centro1 container-centro">
+<div class="container-centro">
+  <h1>Consultar elementos</h1>
+  <button class="botao" (click)="imprimirElementos()">Mostrar elementos</button>
+  <div class="container-centro" >
+    @for(elemento of elementoImprimir; track elemento){
+      <p>Id: {{elemento.id}} - {{ elemento.tipo }}: {{elemento.nome}}, {{elemento.autor}}, {{elemento.ano}},
+        disponível: {{elemento.disponivel}}</p>
+    }
+  </div>
+  <button class="botao" (click)="voltar()">Voltar</button>
+</div>
+</div>
+

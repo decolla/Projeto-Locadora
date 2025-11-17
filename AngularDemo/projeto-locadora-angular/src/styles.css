@@ -1,0 +1,98 @@
+body {
+  font-family: 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+  color: #333;
+  margin: 0;
+  padding: 0;
+  background: linear-gradient(135deg, #f4f4f9 0%, #9e9e9e 100%);
+}
+
+h1, h2, p {
+  text-align: center;
+}
+
+.botao {
+  background-color: white;
+  color: #333;
+  padding: 12px 24px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: 600;
+  transition: all 0.3s ease;
+  margin: 10px;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1); /* sombra leve */
+}
+
+.botao:hover {
+  transform: translateY(-2px); /* subir levemente */
+  box-shadow: 0 4px 8px rgba(0,0,0,0.15);
+  background: linear-gradient(135deg, #77101d 0%, #8f0e5b 100%);
+  color: #dddddd;
+}
+
+.botao2 {
+  background-color: white;
+  color: #333;
+  padding: 12px 24px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: 600;
+  transition: all 0.3s ease;
+  margin: 10px;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1); /* sombra leve */
+}
+
+.botao2:hover {
+  transform: translateY(-2px); /* subir levemente */
+  box-shadow: 0 4px 8px rgba(0,0,0,0.15);
+  background: linear-gradient(135deg, #f4f4f9 0%, #9e9e9e 100%);;
+  color: #000000;
+}
+
+/*  classes compostas: class="botao botao-inicial"*/
+.botao-inicial { font-size: 22px; padding: 18px 30px; }
+
+.formulario {
+  width: 80%;
+  padding: 12px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  font-size: 16px;
+  display: block;
+  margin: 10px auto;
+}
+
+.container-centro {
+  background: white;
+  padding: 63px;
+  margin: 20px auto;
+  border-radius: 10px;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.1); /* sombra elegante */
+  max-width: 1000px;
+  color: #333;
+}
+
+.container-centro2 {
+  background: white;
+  padding: 30px;
+  margin: 20px auto;
+  border-radius: 10px;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.1); /* sombra elegante */
+  max-width: 1000px;
+  color: #333;
+  text-align: center;
+}
+
+@keyframes color-cycle { /* ciclo de cores de fundo */
+  0% { background-color: #670a17; }
+  50% { background-color: #8f0d1e; }
+  100% { background-color: #910d5b; }
+}
+
+.container-centro1 {
+  color: white;
+  animation: color-cycle 5s infinite alternate;
+}

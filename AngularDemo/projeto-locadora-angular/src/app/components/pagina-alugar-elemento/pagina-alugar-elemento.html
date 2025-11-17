@@ -1,0 +1,21 @@
+<app-pagina-buscar-elemento></app-pagina-buscar-elemento>
+<div class ="container-centro1 container-centro">
+<div class="container-centro">
+    <h1>Digite o Id do elemento a ser alugado:</h1>
+    <form (ngSubmit)="procurarElemento()">
+        <input
+            class="formulario"
+            type ="text"
+            [(ngModel)]="Id"
+            name="Id"
+            placeholder="Digite o Id"
+        />
+        <input class="botao" type ="submit" value = "Procurar">
+    </form>
+    @if (elementoEncontrado)  {
+        <h2>Elemento encontrado!</h2>
+        <button class="botao" (click)="alugarElemento()">Alugar este elemento</button>
+    }
+    <div></div><button class="botao" (click)="voltar()"> Voltar ao menu</button>
+</div>
+</div>

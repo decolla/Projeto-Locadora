@@ -1,0 +1,37 @@
+<div class ="container-centro1 container-centro">
+    <div class="container-centro ">
+      <h1>Insira as especificações do elemento:</h1>
+      <form (ngSubmit)="adicionarElemento()">
+          <input
+          class="formulario"
+          type ="text"
+          [(ngModel)]="tipo"
+          name="tipo"
+          placeholder="Digite o tipo"
+          />
+          <input
+          class="formulario"
+          type ="text"
+          [(ngModel)]="nome"
+          name="nome"
+          placeholder="Digite o nome"
+          />
+          <input
+          class="formulario"
+          type ="text"
+          [(ngModel)]="autor"
+          name="autor"
+          placeholder="Digite o autor/diretor"
+          />
+          <input
+          class="formulario"
+          type ="text"
+          [(ngModel)]="ano"
+          name="ano"
+          placeholder="Digite o ano"
+          />
+          <input class="formulario" type = "submit" value = "Enviar">
+      </form>
+      <button class="botao" (click)="voltar()"> Voltar ao menu</button>
+    </div>
+</div>
