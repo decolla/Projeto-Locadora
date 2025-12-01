@@ -10,7 +10,7 @@ O sistema opera em comunicação do front com o back por meio de uma web API
 2.  **Back:** Feito totalmente em .NET em um projeto de API utilizando:
     * Banco de dados em BSON rodando de forma online no MongoDB
     * API em C# com interação por meio de maps com os dados em formato JSON
-3.  **Containerização :** Feita em Docker, com documentos Docker para front e back, e um docker-compose para todo o projeto
+3.  **Containerização:** Feita em Docker, com documentos Docker para front e back, e um docker-compose para todo o projeto
 
 ## Tecnologias Utilizadas
 
@@ -21,8 +21,8 @@ O sistema opera em comunicação do front com o back por meio de uma web API
 
 * [Docker Desktop](https://www.docker.com/products/docker-desktop/) instalado e rodando.
 * [.NET SDK](https://dotnet.microsoft.com/download) instalado.
-* [MongoDB]:([https://www.mongodb.com/pt-br/docs/manual/installation](url)) instalado e rodando.
-* [nginx]: ([https://nginx.org/en/docs/install.html](url)) instalado.
+* [MongoDB]([url](https://www.mongodb.com/pt-br/docs/manual/installation)) instalado e rodando.
+* [nginx]([url](https://nginx.org/en/docs/install.html)) instalado.
 
 ## Como Executar
 
